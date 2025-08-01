@@ -9,12 +9,24 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
+    <style>
+        @media screen and (max-width: 777px) {
+           .mobile{
+             flex-direction: column-reverse;
+             margin-top: 300px;
+
+            
+             
+                }
+            }
+    </style>
+
 </head>
 
 <body>
-    <header class="w-[1200px] mx-auto mt-[30px]">
+    <header class="mx-auto mt-[30px] ">
 
-        <nav class="justify-between flex justify-between ">
+        <nav class="justify-between flex justify-between px-5">
             <div>
                 <img src="assets/logo.png" alt="">
             </div>
@@ -50,7 +62,7 @@
 
     <main>
         <!-- ALWAYS FRESH-->
-        <section class="flex w-[1200px] mx-auto mt-[30px] h-[461px] mt-[120px]">
+        <section class="mobile flex w-[1200px] mx-auto mt-[30px] h-[461px] mt-[120px]">
             <div class="mt-[50px]">
 
                 <h1><span class="text-[65px] font-bold">AlWAYS</span><span>-----</span><span
@@ -62,7 +74,7 @@
                     occasion. </p>
             </div>
             <div class="w-300">
-                <img src="assets/hero-flower.png" alt="">
+                <img id="flower" src="assets/hero-flower.png" alt="">
             </div>
         </section>
 
@@ -125,6 +137,7 @@
 
             </div>
         </section>
+         
     </main>
 </body>
 
