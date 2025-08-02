@@ -13,12 +13,33 @@
         @media screen and (max-width: 777px) {
            .mobile{
              flex-direction: column-reverse;
-             margin-top: 300px;
+             margin-top: 200px;
+             height: auto;
+             width: auto;
 
             
              
                 }
+
+            .navb{
+                width: auto;
+                
+                margin-left: 15%;
             }
+            .navc{
+                justify-content: space-between;
+                border: 2px solid;
+                width: auto;
+            }
+            #flower{
+                border: 2px solid;
+                
+                
+            }
+                
+            }
+
+
     </style>
 
 </head>
@@ -26,30 +47,30 @@
 <body>
     <header class="mx-auto mt-[30px] ">
 
-        <nav class="justify-between flex justify-between px-5">
+        <nav class="navc justify-between flex justify-between px-5">
             <div>
                 <img src="assets/logo.png" alt="">
             </div>
 
-            <div class="flex gap-4 mt-5">
+            <div class="navb flex gap-4 mt-5">
                 <div>
                     <div class="flex gap-4">
                         <a class="font-bold" href="">Home</a>
                         <a class="text-[#8987A1]" href="">Shop</a>
                         <a class="text-[#8987A1]" href="">About us</a>
-                    </div>
-                </div>
+                     </div>
+                      </div>
 
 
-                <div class="flex">
-                    <div>
+                     <div class="flex">
+                      <div>
                         <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
-                    </div>
+                      </div>
 
-                    <div>
+                      <div>
                         </i>
                         <h5 class="text-[#000000]">Cart ($56)</h5>
-                    </div>
+                      </div>
                 </div>
             </div>
 
