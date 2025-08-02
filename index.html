@@ -27,6 +27,7 @@
                 margin-left: 15%;
             }
             .navc{
+                justify-items: center;
                 justify-content: space-between;
                 border: 2px solid;
                 width: auto;
@@ -34,6 +35,22 @@
             #flower{
                 border: 2px solid;
                 
+                
+            }
+            .plants{
+                width: auto;
+                height: auto;
+            }
+
+            .flower8{
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+            }
+            .flower8text{
+                width: auto;
+                display: flex;
+                
+                border: 2px solid;
                 
             }
                 
@@ -102,18 +119,18 @@
 
         <!-- OUR PLANTS -->
 
-        <section>
+        <section class="plants border-2">
             <div class="w-[1140px] mx-auto h-[138px] text-center">
                 <h3><span class="text-[#E95A08] text-[50px] font-bold">Our</span><span>----</span><span
                         class="text-[50px] font-bold">Plants</span></h3>
 
-                <p class="w-[888px] h-[54px] mx-auto">Indulge your senses with the beauty and fragrance of our fresh
+                <p class="flower8text w-[888px] h-[54px] mx-auto">Indulge your senses with the beauty and fragrance of our fresh
                     flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
             </div>
 
             <!-- 8 flowers -->
 
-            <div class="w-[1140px] h-[999px] grid grid-cols-4 mx-auto">
+            <div class="flower8 w-[1140px] h-[999px] grid grid-cols-4 mx-auto">
                 <div><img src="assets/sample-flower-image.png" alt="">
                     <h5>Lily Blossom <br><span class="text-[#111111] font-bold">20 USD</span></h5><button class="w-[270px] h-[50px]
             bg-[#E95A08] text-[#FFFFFF]">ADD TO CART</button>
