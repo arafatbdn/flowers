@@ -9,87 +9,41 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <style>
-        @media screen and (max-width: 777px) {
-           .mobile{
-             flex-direction: column-reverse;
-             margin-top: 200px;
-             height: auto;
-             width: auto;
-
-            
-             
-                }
-
-            .navb{
-                width: auto;
-                
-                margin-left: 15%;
-            }
-            .navc{
-                justify-items: center;
-                justify-content: space-between;
-                border: 2px solid;
-                width: auto;
-            }
-            #flower{
-                border: 2px solid;
-                
-                
-            }
-            .plants{
-                width: auto;
-                height: auto;
-            }
-
-            .flower8{
-                display: grid;
-                grid-template-columns: repeat(1,1fr);
-            }
-            .flower8text{
-                width: auto;
-                display: flex;
-                
-                border: 2px solid;
-                
-            }
-                
-            }
 
 
-    </style>
+
 
 </head>
 
 <body>
-    <header class="mx-auto mt-[30px] ">
+    <header class="">
 
-        <nav class="navc justify-between flex justify-between px-5">
+        <nav class="flex justify-between ">
             <div>
                 <img src="assets/logo.png" alt="">
             </div>
 
-            <div class="navb flex gap-4 mt-5">
-                <div>
-                    <div class="flex gap-4">
+            <div class=" border-2 mt-8">
+
+                <!-- <div class="flex">
                         <a class="font-bold" href="">Home</a>
                         <a class="text-[#8987A1]" href="">Shop</a>
                         <a class="text-[#8987A1]" href="">About us</a>
                      </div>
-                      </div>
+                      </div> -->
 
 
-                     <div class="flex">
-                      <div>
+                <div class="flex">
+                    <div>
                         <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
-                      </div>
+                    </div>
 
-                      <div>
+                    <div>
                         </i>
                         <h5 class="text-[#000000]">Cart ($56)</h5>
-                      </div>
+                    </div>
+
                 </div>
-            </div>
 
 
 
@@ -100,8 +54,14 @@
 
     <main>
         <!-- ALWAYS FRESH-->
-        <section class="mobile flex w-[1200px] mx-auto mt-[30px] h-[461px] mt-[120px]">
-            <div class="mt-[50px]">
+        <section class="mt-7">
+            
+            <div class="">
+                <img id="flower" src="assets/hero-flower.png" alt="">
+            </div>
+            
+            
+            <div class="">
 
                 <h1><span class="text-[65px] font-bold">AlWAYS</span><span>-----</span><span
                         class="text-[#E95A08] text-[65px] font-bold">FRESH </span><br><span
@@ -111,20 +71,19 @@
                     classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any
                     occasion. </p>
             </div>
-            <div class="w-300">
-                <img id="flower" src="assets/hero-flower.png" alt="">
-            </div>
+            
         </section>
 
 
         <!-- OUR PLANTS -->
 
-        <section class="plants border-2">
+        <section class="plants ">
             <div class="w-[1140px] mx-auto h-[138px] text-center">
                 <h3><span class="text-[#E95A08] text-[50px] font-bold">Our</span><span>----</span><span
                         class="text-[50px] font-bold">Plants</span></h3>
 
-                <p class="flower8text w-[888px] h-[54px] mx-auto">Indulge your senses with the beauty and fragrance of our fresh
+                <p class="flower8text w-[888px] h-[54px] mx-auto">Indulge your senses with the beauty and fragrance of
+                    our fresh
                     flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
             </div>
 
@@ -175,7 +134,7 @@
 
             </div>
         </section>
-         
+
     </main>
 </body>
 
