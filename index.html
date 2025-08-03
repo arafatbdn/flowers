@@ -18,7 +18,7 @@
         .offer {
             background-image: url('assets/deal-bloom.png');
             background-size: cover;
-            height: 300px;
+            height: 18rem;
             width: 100%;
             display: grid;
             justify-content: center;
@@ -33,7 +33,7 @@
         .offer1 {
             background-image: url('assets/deal-ana.png');
             background-size: cover;
-            height: 300px;
+            height: 18rem;
             width: 100%;
             display: grid;
             justify-content: center;
@@ -48,7 +48,7 @@
         .offer2 {
             background-image: url('assets/deal-zabo.png');
             background-size: cover;
-            height: 300px;
+            height: 18rem;
             width: 100%;
             display: grid;
             justify-content: center;
@@ -57,6 +57,7 @@
             text-align: center;
             margin: 0 auto;
             margin-bottom: 2rem;
+            
         }
 
 
@@ -64,7 +65,7 @@
         .email-bg-photo {
             background-image: url('assets/news-letter-bg.png');
             background-size: cover;
-            height: 300px;
+            height: 18rem;
             width: 100%;
             display: grid;
             justify-content: center;
@@ -93,19 +94,20 @@
 <body>
     <header class="">
 
-        <nav class="flex justify-between ">
+        <nav class="flex justify-between  lg:items-center  ">
             <div>
                 <img src="assets/logo.png" alt="">
             </div>
 
-            <div class=" mt-8">
+            <div class=" lg:flex mt-8 lg:gap-5">
 
-                <!-- <div class="flex">
+               <div>
+                 <div class="hidden gap-1 lg:flex">
                         <a class="font-bold" href="">Home</a>
                         <a class="text-[#8987A1]" href="">Shop</a>
                         <a class="text-[#8987A1]" href="">About us</a>
                      </div>
-                      </div> -->
+                      </div> 
 
 
                 <div class="flex">
@@ -119,6 +121,7 @@
                     </div>
 
                 </div>
+               </div>
 
 
 
@@ -129,7 +132,7 @@
 
     <main>
         <!-- ALWAYS FRESH-->
-        <section class="mt-7">
+        <section class="mt-7  lg:flex lg:flex lg:flex-row-reverse lg:mt-20 lg:mb-27 lg:mx-10">
 
             <div class="w-auto ">
                 <img id="flower" src="assets/hero-flower.png" alt="">
@@ -138,9 +141,9 @@
 
             <div class="w-auto m-5  ">
 
-                <h1 class=""><span class="text-[24px] font-bold">AlWAYS</span><span>-----</span><span
-                        class="text-[#E95A08] text-[24px] font-bold">FRESH </span><br><span
-                        class="text-[#E95A08] text-[24px] font-bold">FLOWERS</span></h1>
+                <h1 class=""><span class="text-[24px] font-bold lg:text-5xl">AlWAYS</span><span>-----</span><span
+                        class="text-[#E95A08] text-[24px] font-bold lg:text-5xl">FRESH </span><br><span
+                        class="text-[#E95A08] text-[24px] font-bold lg:text-5xl">FLOWERS</span></h1>
 
                 <p class="mt-[14px] text-[rgba(0,0,0,0.5)] ">Indulge your senses with the beauty and fragrance of our
                     fresh flower shop. From
@@ -155,8 +158,8 @@
 
         <section class=" w-full mr-10%">
             <div class="text-center">
-                <h3><span class="text-[#E95A08] text-[24px] font-bold">Our</span><span>----</span><span
-                        class="text-[24px] font-bold">Plants</span></h3>
+                <h3 class="lg:mb-5"><span class="text-[#E95A08] text-[24px] font-bold lg:text-5xl">Our</span><span>----</span><span
+                        class="text-[24px] font-bold lg:text-5xl">Plants</span></h3>
 
                 <p class=" h-[14px] mx-auto text-[rgba(0,0,0,0.5)]">Indulge your senses with the beauty and fragrance of
                     our fresh
@@ -165,7 +168,7 @@
 
             <!-- 8 flowers -->
 
-            <div class="  grid grid-cols-2  mt-20  gap-2 p-1 ">
+            <div class="  grid grid-cols-2  mt-20  gap-2 p-1 lg:grid lg:grid-cols-4 lg:mx-12">
 
                 <div><img src="assets/sample-flower-image.png" alt="">
                     <h5>Lily Blossom <br><span class="text-[#111111] font-bold">20 USD</span></h5><button class="w-[171px] h-[50px]
@@ -213,8 +216,11 @@
         </section>
 
         <!-- Flower & Plants Lover -->
-        <section class="w-auto  mt-10 m-1">
-            <div>
+        <section class="w-auto  mt-10 m-1 lg:relative lg:w-10xl">
+            <div class="hidden lg:flex">
+                <img class="lg:w-50 lg:absolute lg:top-0 lg:left-80 " src="assets/trusted-badge.png" alt="">
+            </div>
+            <div class=" lg:flex lg:gap-30 lg:mx-22 lg:mt-40">
                 <div><img class="w-full" src="assets/flower-store.png" alt="">
                 </div>
 
@@ -240,18 +246,19 @@
 
         <!-- Latest Deals -->
 
-        <section>
-            <h1 class="text-center"><span class="text-[#E95A08] text-2xl font-bold">Latest</span> <span
-                    class="text-2xl font-bold">Deals</span></h1>
+        <section class="mt-15">
+            <h1 class="text-center"><span class="text-[#E95A08] text-2xl font-bold lg:text-5xl">Latest</span> <span
+                    class="text-2xl font-bold lg:text-5xl">Deals</span></h1>
             <p class="mt-[14px] text-[rgba(0,0,0,0.5)]
             w-full">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to
                 exotic blooms, we offer a wide variety of fresh.</p>
         </section>
 
-        <!-- 3 photo -->
-        <section class="m-2.5">
+        <!-- 3 photo for mobile -->
+        <!-- <section class="m-2.5 lg:hidden">
 
-            <div class="offer rounded-xl">
+            <div class="lg:grid">
+                <div class="offer rounded-xl">
                 <h1 class="text-[#FFFFFF] font-bold ">60% Off | Bloom Plant</h1>
                 <a class="font-bold" href="">Shop Now</a>
             </div>
@@ -261,7 +268,10 @@
                 <h1 class="text-[#FFFFFF] font-bold ">30% Off | Ana Plant</h1>
                 <a class="font-bold" href="">Shop Now</a>
             </div>
+            </div>
 
+            
+            
             <div class="offer2 rounded-xl">
                 <h1 class="text-[#FFFFFF] font-bold">25% Off | Zabo Plant</h1>
                 <a class="font-bold" href="">Shop Now</a>
@@ -271,6 +281,46 @@
 
 
 
+        </section> -->
+
+
+        
+
+        <section>
+            <!--  pic 2 div -->
+              <div>
+                <div class="relative border-2">
+                <div><img class="w-full" src="assets/deal-bloom.png" alt=""></div>
+                <div class="absolute top-22 left-30 text-[#FFFFFF] font-bold">
+                      <h1>60% Off | Bloom Plant</h1>
+                      <a href="">Shop Now</a>
+                </div>
+
+             </div>
+
+             <div class="relative border-2">
+                <div><img class="w-full" src="assets/deal-ana.png" alt=""></div>
+                <div class="absolute top-20 left-25 text-[#FFFFFF] font-bold">
+                      <h1>60% Off | Bloom Plant</h1>
+                      <a href="">Shop Now</a>
+                </div>
+              </div>
+
+              
+
+             </div>
+
+             <!-- 3rd pic -->
+              <div class="relative border-2">
+                <div><img class="w-full" src="assets/deal-zabo.png" alt=""></div>
+                <div class="absolute top-20 left-25 text-[#FFFFFF] font-bold">
+                      <h1>60% Off | Bloom Plant</h1>
+                      <a href="">Shop Now</a>
+                </div>
+              </div>
+
+
+             
         </section>
 
 
